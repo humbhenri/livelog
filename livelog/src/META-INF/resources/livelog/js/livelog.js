@@ -237,7 +237,7 @@ livelog.controller('LivelogCtrl', [
 		window.llapi = llapi;
 		$rootScope.scrollLock = false;
 		$interval(function() {
-			$rootScope.scrollLock || $('.livelog-content #mdVerticalContainer .md-virtual-repeat-scroller').animate({ scrollTop: Number.MAX_VALUE }, 0);
+			$('.livelog-content #mdVerticalContainer .md-virtual-repeat-scroller').animate({ scrollTop: $('.livelog-content #mdVerticalContainer .md-virtual-repeat-scroller')[0].scrollHeight }, "fast");
 		}, 100);
 
 		$rootScope.keypress = function(e) {

@@ -6,6 +6,11 @@
 	<version>0.0.3</version>
 	<packaging>war</packaging>
 	<name>LiveLog Sample WebAPP</name>
+
+	<properties>
+		<maven.compiler.source>1.8</maven.compiler.source>
+		<maven.compiler.target>1.8</maven.compiler.target>
+	</properties>
 	<dependencies>
 
 		<!-- LiveLog dependency -->
@@ -13,7 +18,7 @@
 			<!-- Only by loading, the livelog will be available at /livelog. -->
 			<groupId>com.dlmorais</groupId>
 			<artifactId>livelog</artifactId>
-			<version>0.0.3</version>
+			<version>0.0.8</version>
 		</dependency>
 		<!-- /LiveLog dependency -->
 
